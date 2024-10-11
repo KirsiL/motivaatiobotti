@@ -70,7 +70,41 @@
       <template><srai>AUKIOLOAIKA</srai></template>
     </category>
   
-  
+    <category>
+
+    <pattern>^ PRICE OF *</pattern>
+
+    <template>
+
+        Hmmm, <set var="pr"><map name="prices"><star index="2"/></map></set>.
+
+        <split/>
+
+        <condition var="pr">
+
+           <li value="unknown">Don't have it.</li> 
+
+           <li>
+
+               The price of <star index="2"/> is <map name="prices"><star index="2"/></map> Euro(s).
+
+           </li>
+
+        </condition>
+
+    </template>
+
+    </category>
+
+ 
+
+    <category>
+
+    <pattern>^ PRICE OF A  *</pattern>
+
+       <template><srai>^ PRICE OF <star index="2"/></srai></template>
+
+    </category>
   <!-- MUUTA KOKEILUA -->
   
   
@@ -79,3 +113,4 @@
       <template>AIML-kielessä category-elementti on keskeinen osa, koska se määrittelee yksittäisen keskusteluyksikön tai mallin, joka kertoo, miten botti vastaa tiettyyn käyttäjän esittämään syötteeseen.</template>
   </category>
 </aiml>
+
