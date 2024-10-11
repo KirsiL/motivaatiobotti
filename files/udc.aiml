@@ -1,0 +1,35 @@
+<aiml>
+  <!-- Yhteystietokysely: Osoite -->
+  <category>
+    <pattern>WHAT IS YOUR ADDRESS</pattern>
+    <template>Our shop is at Hämeenkatu 3 1/4, Tampere, Finland.</template>
+  </category>
+
+  <!-- Synonyymit osoitekyselylle -->
+  <category>
+    <pattern>WHERE ARE YOU LOCATED</pattern>
+    <template><srai>WHAT IS YOUR ADDRESS</srai></template>
+  </category>
+
+  <category>
+    <pattern>LOCATION</pattern>
+    <template><srai>WHAT IS YOUR ADDRESS</srai></template>
+  </category>
+
+  <!-- Aukioloajat -->
+  <category>
+    <pattern>WHAT ARE YOUR OPENING HOURS</pattern>
+    <template>Our shop's opening hours are on weekdays 9 - 18.</template>
+  </category>
+
+  <!-- Synonyymit aukioloaikakyselylle -->
+  <category>
+    <pattern>WHEN ARE YOU OPEN</pattern>
+    <template><srai>WHAT ARE YOUR OPENING HOURS</srai></template>
+  </category>
+
+  <category>
+    <pattern>OPENING TIMES</pattern>
+    <template><srai>WHAT ARE YOUR OPENING HOURS</srai></template>
+  </category>
+</aiml>

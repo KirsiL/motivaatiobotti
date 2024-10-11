@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>En osaa vastata</template>
+  </category>
+  
+    <category>
+        <pattern>HI</pattern>
+        <template>Moikka, olen ryhmän 2 motivaatiobotti!</template>
+    </category>
+  
+  <category>
+      <pattern>moi ^</pattern>
+      <template>
+          <srai>HI</srai>
+      </template>
+  </category>
+  
+    <category>
+      <pattern>hei ^</pattern>
+      <template>
+          <srai>HI</srai>
+      </template>
+  </category>
+  
+    <category>
+      <pattern>terve ^</pattern>
+      <template>
+          <srai>HI</srai>
+      </template>
+  </category>
+  
+  <!-- VASARA SEKOILUT -->
+
+    <category>
+      <pattern>PALJONKO VASARA MAKSAA</pattern>
+      <template>Vasaran hinta on 19 euroa.</template>
+    </category>
+    
+    <category>
+      <pattern>MITÄ VASARA MAKSAA</pattern>
+      <template>Vasaran hinta on 19 euroa.</template>
+    </category>
+    
+    <category>
+      <pattern>MINKÄ HINTAINEN VASARA ON</pattern>
+      <template>Vasaran hinta on 19 euroa.</template>
+    </category>
+  
+  <!-- KAUPPA SEKOILUT -->
+  
+  <category>
+      <pattern>AUKIOLOAIKA</pattern>
+      <template>Kauppamme on auki arkipäivisin klo 9 - 18.</template>
+  </category>
+  
+  <category>
+      <pattern>MITKÄ OVAT AUKIOLOAIKANNE</pattern>
+      <template><srai>AUKIOLOAIKA</srai></template>
+    </category>
+    
+    <category>
+      <pattern>MIHIN AIKAAN OLETTE AUKI</pattern>
+      <template><srai>AUKIOLOAIKA</srai></template>
+    </category>
+    
+    <category>
+      <pattern>MIHIN AIKAAN KAUPPA ON AUKI</pattern>
+      <template><srai>AUKIOLOAIKA</srai></template>
+    </category>
+  
+  
+  <!-- MUUTA KOKEILUA -->
+  
+  
+  <category>
+      <pattern>mikä on category elementti</pattern>
+      <template>AIML-kielessä category-elementti on keskeinen osa, koska se määrittelee yksittäisen keskusteluyksikön tai mallin, joka kertoo, miten botti vastaa tiettyyn käyttäjän esittämään syötteeseen.</template>
+  </category>
+</aiml>
